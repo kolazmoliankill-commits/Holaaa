@@ -65,7 +65,7 @@ scene.add(core);
 const textPivot = new THREE.Group();
 scene.add(textPivot);
 function makeCenterTextTexture(e){const t=document.createElement("canvas");t.width=1024,t.height=256;const n=t.getContext("2d");n.font="bold 75px Arial",n.textAlign="center",n.textBaseline="middle",n.fillStyle="#ffffff",n.shadowColor="#ff0044",n.shadowBlur=40,n.fillText(e,t.width/2,t.height/2);return new THREE.CanvasTexture(t)}
-const centerSprite=new THREE.Sprite(new THREE.SpriteMaterial({map:makeCenterTextTexture("TE AMO MUCHO ❤️ LESLIE"),transparent:!0}));
+const centerSprite=new THREE.Sprite(new THREE.SpriteMaterial({map:makeCenterTextTexture("TE QUIERO MUCHO ❤️ LESLIE"),transparent:!0}));
 centerSprite.scale.set(160,40,1); 
 textPivot.add(centerSprite);
 
